@@ -19,4 +19,13 @@ namespace ApiExceptions
 
         }
     }
+
+    public class NotFound : Exception
+    {
+        public NotFound()
+            :base("Resource not found or temporarily not available")
+        {
+
+        }
+    }
 }
