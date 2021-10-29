@@ -7,7 +7,7 @@ namespace ApiExceptions
         public BadRequest()
             : base("The server cannot or will not process the request due to an apparent client error.")
         {
-
+            
         }
     }
 
