@@ -31,11 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ApiExceptions">
-      <HintPath>..\..\ApiExceptions\ApiExceptions\bin\Debug\ApiExceptions.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>\\development\REPOSITORY\Tancredi\BrowserTestate\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +51,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structure.cs" />
     <Compile Include="Validator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApiExceptions\ApiExceptions.csproj">
+      <Project>{544c1209-f12f-405b-8819-79a720f60f65}</Project>
+      <Name>ApiExceptions</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
